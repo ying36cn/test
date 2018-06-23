@@ -1,0 +1,682 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="乐享微信">
+		<title>汇融易贷款-贷款测试页面</title>
+		<script type="text/javascript">
+		var ctx = '/weixin';
+		</script>
+		<script type="text/javascript" src="/weixin/Background/js/jquery-1.11.1.js"></script>
+		<script src="/weixin/Background/js/jquery.alerts.js" type="text/javascript"></script>
+		<script src="/weixin/Background/js/applyTest.js" type="text/javascript"></script>
+		<script src="/weixin/Background/js/main.js" type="text/javascript"></script>
+		<script src="/weixin/Background/js/validate.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="weixin/Background/css/style.css" type="text/css"></link>
+		<link rel="stylesheet" href="/weixin/Background/css/validate.css" type="text/css"></link>
+		<link href="/weixin/Background/css/jquery.alert.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+		radio{
+			margin-right: 5px;
+			height: 8%;
+			line-height: 14px;
+			width: 8%;
+		}
+		</style>
+	</head>
+	<body onload="initValidate()">
+		<!-- 页头 -->
+		<header>
+			<h1>
+				贷款测试表
+			</h1>
+		</header>
+		<section class="wrap">
+		<form  method="post" id="commonForm" class="form" action="addTest">
+			<input type="hidden" id="lastAs" name="lastAs" value=""/>
+			<input type="hidden" id="puPosAs" name="puPosAs" value=""/>
+			<input type="hidden" id="haFlowAs" name="haFlowAs" value=""/>
+			<input type="hidden" id="haPosAs" name="haPosAs" value=""/>
+			<input type="hidden" id="puCardAs" name="puCardAs" value=""/>
+			<input type="hidden" id="loan_type" name="loan_type" value=""/>
+			<input type="hidden" 
+            id="result" name="result" value=""/>
+			<input type="hidden" id="reason" name="reason" value=""/>
+			<input type="hidden" name="weixin" id="weixin" value="">
+			<input type="hidden" name="userName" id="userName" value="">
+			<div class="mod">
+				<div align="center">
+						 <table width="100%" cellspacing="5" ><tbody class="td_border">
+							<tr>
+								<td width="35%" align="right">
+									商户地区：
+								</td>
+								<td width="65%" align="left">
+									<select name="test_province" id="test_province" style="width:105px" class="validate">
+										
+										
+											<option value="132" 
+											 
+											>重庆市</option>
+										
+											<option value="131" 
+											 
+											>浙江省</option>
+										
+											<option value="130" 
+											 
+											>云南省</option>
+										
+											<option value="128" 
+											 
+											>新疆</option>
+										
+											<option value="127" 
+											 
+											>西藏</option>
+										
+											<option value="126" 
+											 
+											>天津市</option>
+										
+											<option value="125" 
+											 
+											>四川省</option>
+										
+											<option value="124" 
+											 
+											>上海市</option>
+										
+											<option value="123" 
+											 
+											>陕西省</option>
+										
+											<option value="122" 
+											 
+											>山西省</option>
+										
+											<option value="121" 
+											 
+											>山东省</option>
+										
+											<option value="120" 
+											 
+											>青海省</option>
+										
+											<option value="119" 
+											 
+											>宁夏</option>
+										
+											<option value="118" 
+											 
+											>内蒙古</option>
+										
+											<option value="117" 
+											 
+											>辽宁省</option>
+										
+											<option value="116" 
+											 
+											>江西省</option>
+										
+											<option value="115" 
+											 
+											>江苏省</option>
+										
+											<option value="114" 
+											 
+											>吉林省</option>
+										
+											<option value="113" 
+											 
+											>湖南省</option>
+										
+											<option value="112" 
+											 
+											>湖北省</option>
+										
+											<option value="111" 
+											 
+											>黑龙江省</option>
+										
+											<option value="110" 
+											 
+											>河南省</option>
+										
+											<option value="109" 
+											 
+											>河北省</option>
+										
+											<option value="108" 
+											 
+											>海南省</option>
+										
+											<option value="107" 
+											 
+											>贵州省</option>
+										
+											<option value="106" 
+											 
+											>广西</option>
+										
+											<option value="105" 
+											 selected="selected"
+											>广东省</option>
+										
+											<option value="104" 
+											 
+											>甘肃省</option>
+										
+											<option value="103" 
+											 
+											>福建省</option>
+										
+											<option value="102" 
+											 
+											>北京市</option>
+										
+											<option value="101" 
+											 
+											>安徽省</option>
+										
+											<option value="000" 
+											 
+											>未知</option>
+										
+								     </select> 
+							         <select name="test_city" id="test_city" style="width:105px" class="validate">
+									    
+											<option value="4401" 
+											 selected="selected"
+											>广州市</option>
+										
+											<option value="4402" 
+											 
+											>韶关市</option>
+										
+											<option value="4403" 
+											 
+											>深圳市</option>
+										
+											<option value="4404" 
+											 
+											>珠海市</option>
+										
+											<option value="4405" 
+											 
+											>汕头市</option>
+										
+											<option value="4406" 
+											 
+											>佛山市</option>
+										
+											<option value="4407" 
+											 
+											>江门市</option>
+										
+											<option value="4408" 
+											 
+											>湛江市</option>
+										
+											<option value="4409" 
+											 
+											>茂名市</option>
+										
+											<option value="4411" 
+											 
+											>顺德市</option>
+										
+											<option value="4412" 
+											 
+											>肇庆市</option>
+										
+											<option value="4413" 
+											 
+											>惠州市</option>
+										
+											<option value="4414" 
+											 
+											>梅州市</option>
+										
+											<option value="4415" 
+											 
+											>汕尾市</option>
+										
+											<option value="4416" 
+											 
+											>河源市</option>
+										
+											<option value="4417" 
+											 
+											>阳江市</option>
+										
+											<option value="4418" 
+											 
+											>清远市</option>
+										
+											<option value="4419" 
+											 
+											>东莞市</option>
+										
+											<option value="4420" 
+											 
+											>中山市</option>
+										
+											<option value="4451" 
+											 
+											>潮州市</option>
+										
+											<option value="4452" 
+											 
+											>揭阳市</option>
+										
+											<option value="4453" 
+											 
+											>云浮市</option>
+										
+											<option value="4766" 
+											 
+											>增城市</option>
+										
+											<option value="4767" 
+											 
+											>从化市</option>
+										
+											<option value="4769" 
+											 
+											>曲江县</option>
+										
+											<option value="4770" 
+											 
+											>始兴县</option>
+										
+											<option value="4771" 
+											 
+											>南雄市</option>
+										
+											<option value="4772" 
+											 
+											>仁化县</option>
+										
+											<option value="4773" 
+											 
+											>乐昌市</option>
+										
+											<option value="4774" 
+											 
+											>翁源县</option>
+										
+											<option value="4775" 
+											 
+											>乳源县</option>
+										
+											<option value="4776" 
+											 
+											>新丰县</option>
+										
+											<option value="4780" 
+											 
+											>澄海市</option>
+										
+											<option value="4781" 
+											 
+											>饶平县</option>
+										
+											<option value="4782" 
+											 
+											>南澳县</option>
+										
+											<option value="4783" 
+											 
+											>潮阳市</option>
+										
+											<option value="4785" 
+											 
+											>揭西县</option>
+										
+											<option value="4786" 
+											 
+											>普宁市</option>
+										
+											<option value="4787" 
+											 
+											>惠来县</option>
+										
+											<option value="4789" 
+											 
+											>揭东县</option>
+										
+											<option value="4790" 
+											 
+											>潮安营业部</option>
+										
+											<option value="4793" 
+											 
+											>台山市</option>
+										
+											<option value="4794" 
+											 
+											>恩平市</option>
+										
+											<option value="4795" 
+											 
+											>开平市</option>
+										
+											<option value="4796" 
+											 
+											>鹤山市</option>
+										
+											<option value="4798" 
+											 
+											>吴川市</option>
+										
+											<option value="4799" 
+											 
+											>廉江市</option>
+										
+											<option value="4800" 
+											 
+											>遂溪县</option>
+										
+											<option value="4801" 
+											 
+											>雷州市</option>
+										
+											<option value="4802" 
+											 
+											>徐闻县</option>
+										
+											<option value="4803" 
+											 
+											>茂名市</option>
+										
+											<option value="4804" 
+											 
+											>信宜市</option>
+										
+											<option value="4805" 
+											 
+											>高州市</option>
+										
+											<option value="4806" 
+											 
+											>电白县</option>
+										
+											<option value="4807" 
+											 
+											>化州市</option>
+										
+											<option value="4809" 
+											 
+											>高要市</option>
+										
+											<option value="4810" 
+											 
+											>四会市</option>
+										
+											<option value="4811" 
+											 
+											>广宁县</option>
+										
+											<option value="4812" 
+											 
+											>怀集县</option>
+										
+											<option value="4813" 
+											 
+											>封开县</option>
+										
+											<option value="4814" 
+											 
+											>德庆县</option>
+										
+											<option value="4816" 
+											 
+											>新兴县</option>
+										
+											<option value="4817" 
+											 
+											>郁南县</option>
+										
+											<option value="4818" 
+											 
+											>罗定市</option>
+										
+											<option value="4820" 
+											 
+											>博罗县</option>
+										
+											<option value="4821" 
+											 
+											>惠东县</option>
+										
+											<option value="4822" 
+											 
+											>龙门县</option>
+										
+											<option value="4823" 
+											 
+											>大亚湾营业部</option>
+										
+											<option value="4825" 
+											 
+											>大埔县</option>
+										
+											<option value="4826" 
+											 
+											>丰顺县</option>
+										
+											<option value="4827" 
+											 
+											>五华县</option>
+										
+											<option value="4828" 
+											 
+											>兴宁市</option>
+										
+											<option value="4829" 
+											 
+											>平远县</option>
+										
+											<option value="4830" 
+											 
+											>蕉岭县</option>
+										
+											<option value="4832" 
+											 
+											>海丰县</option>
+										
+											<option value="4833" 
+											 
+											>陆丰市</option>
+										
+											<option value="4834" 
+											 
+											>陆河县</option>
+										
+											<option value="4836" 
+											 
+											>紫金县</option>
+										
+											<option value="4837" 
+											 
+											>龙川县</option>
+										
+											<option value="4838" 
+											 
+											>连平县</option>
+										
+											<option value="4839" 
+											 
+											>和平县</option>
+										
+											<option value="4840" 
+											 
+											>东源县</option>
+										
+											<option value="4842" 
+											 
+											>阳西县</option>
+										
+											<option value="4843" 
+											 
+											>阳春市</option>
+										
+											<option value="4844" 
+											 
+											>阳东县</option>
+										
+											<option value="4846" 
+											 
+											>佛冈县</option>
+										
+											<option value="4847" 
+											 
+											>英德市</option>
+										
+											<option value="4848" 
+											 
+											>阳山县</option>
+										
+											<option value="4849" 
+											 
+											>连州市</option>
+										
+											<option value="4850" 
+											 
+											>连山县</option>
+										
+											<option value="4851" 
+											 
+											>连南县</option>
+										
+											<option value="4852" 
+											 
+											>清新县</option>
+										
+							         </select>
+								</td>
+							</tr>
+							<tr>
+								<td  align="right">
+									法人年龄：
+								</td>
+								<td align="left" >
+									<span class="validate" validateParam="{type:'radio'}" >
+										<input type="radio" name="age" id="test_legalAge" value="0" />20~60岁<br/>
+										<input type="radio" name="age" id="test_legalAge" value="1" />其他
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td  align="right">
+									营业执照注册时间：
+								</td>
+								<td align="left" >
+									<span class="validate" validateParam="{type:'radio'}" >
+										<input type="radio" name="test_busiTime" id="test_busiTime" value="0" />小于12个月<br/>
+										<input type="radio" name="test_busiTime" id="test_busiTime" value="1" />12~24个月<br/>
+										<input type="radio" name="test_busiTime" id="test_busiTime" value="2" />大于24个月
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td  align="right">
+									商户所有银行卡<br/>近6个月存入总额：
+								</td>
+								<td align="left">
+									<input type="text" name="test_cardTrans" id="test_cardTrans" onkeyup="value=value.replace(/[^0-9]/g,'')" maxlength="3"  style="text-align:right;padding-right:5px;width:60%;" class="validate"/>&nbsp;万元
+								</td>
+							</tr>
+							<tr>
+								<td  align="right">
+									商户所有pos<br/>近6个月交易流水总额：
+								</td>
+								<td align="left">
+									<input type="text" name="test_posTrans"  id="test_posTrans" onkeyup="value=value.replace(/[^0-9]/g,'')" maxlength="3"  style="text-align:right;padding-right:5px;width:60%;" class="validate"/>&nbsp;万元
+								</td>
+							</tr>
+							<tr>
+								<td  align="right">
+									最近月份的pos连续流水：
+								</td>
+								<td align="left">
+									<span class="validate" validateParam="{type:'radio'}" >
+										<input type="radio" name="test_posConTrans" id="test_posConTrans" value="0"/>连续2个月<br/>
+										<input type="radio" name="test_posConTrans" id="test_posConTrans" value="1"/>连续3个月<br/>
+										<input type="radio" name="test_posConTrans" id="test_posConTrans" value="2"/>连续3个月以上
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td  align="right">
+									pos收单时间：
+								</td>
+								<td align="left">
+									<span class="validate" validateParam="{type:'radio'}" >
+										<input type="radio" name="test_posInsTime" id="test_posInsTime" value="0"/>小于3个月<br/>
+										<input type="radio" name="test_posInsTime" id="test_posInsTime" value="1"/>3~6个月<br/>
+										<input type="radio" name="test_posInsTime" id="test_posInsTime" value="2"/>6~12个月<br/>
+										<input type="radio" name="test_posInsTime" id="test_posInsTime" value="3"/>12个月以上
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td  align="right">
+									企业或其法人当前<br/>是否存在逾期且未结算：
+								</td>
+								<td align="left">
+									<span class="validate" validateParam="{type:'radio'}" >
+										<input type="radio" name="test_legalSettlement" id="test_legalSettlement" value="0"/>是
+										<br/>
+										<input type="radio" name="test_legalSettlement" id="test_legalSettlement" value="1"/>否
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td  align="right">
+									企业或其法人在<br/>近2年内连续4个月存在逾期：
+								</td>
+								<td align="left">
+									<span class="validate" validateParam="{type:'radio'}" >
+										<input type="radio" name="test_legalOverTime" id="test_legalOverTime" value="0"/>是
+										<br/>
+										<input type="radio" name="test_legalOverTime" id="test_legalOverTime" value="1"/>否
+									</span>
+								</td>
+							</tr></tbody>
+								<tr>
+								<td  align="center" colspan="2">
+									<font id="msg" color="red"></font>
+								</td>
+								
+							</tr>
+							<tr>
+								<td colspan="2" align="center">
+								<input  type="button" class="formbutton" value="开始测试" onclick="commonTest('')" style="width:45%"/>
+								<input type="button" class="formbutton" value="返回首页" onclick="window.location.href='/weixin/huirongyi/step1?userName=&weixin='" style="width:45%"/>
+								</td>
+							</tr>
+							
+						</table>
+				</div>
+			</div>
+		</form>
+		</section>
+		<footer>
+		<div align="center">
+			<!-- 页脚 -->
+		</div>
+		</footer>
+	</body>
+</html>
+

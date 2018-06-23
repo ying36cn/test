@@ -1,0 +1,113 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>登录</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="/weixin/Background/css/style.css" type="text/css"></link>
+		<script type="text/javascript" src="/weixin/image/FeedandGuarantee/js/jquery.js"></script>
+		<script src="/weixin/Background/js/jquery.alerts.js" type="text/javascript"></script> 
+		<link href="/weixin/Background/css/jquery.alert.css" rel="stylesheet" type="text/css">
+
+
+		<link href="/weixin/Background/css/jquery.alert.css"
+			rel="stylesheet" type="text/css">
+            		<link rel="stylesheet" href="weixin/Background/css/hry_menu.css"
+			type="text/css"></link>
+		
+	<script type="text/javascript" src="/weixin/Background/js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="/weixin/Background/js/validate1.js"></script>
+	<link rel="stylesheet" href="weixin/Background/css/style.css" type="text/css"></link>
+	<link rel="stylesheet" href="/weixin/Background/css/validate.css" type="text/css"></link>
+	</head>
+	<body onload="load()">
+		<!-- 页头 -->
+		
+	
+	
+		<table width="100%" class="menu" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" >
+		
+						<a class=" site" href="/weixin/huirongyi/step1?userName=linxu345&weixin=&type=">贷款申请</a>
+					
+				</td>
+				<td align="center">
+				
+						<a  href="/weixin/huirongyi/list?userName=linxu345&weixin=&type=">申请查询</a>
+					
+				</td>
+			</tr>
+		</table>
+		<section class="wrap">
+		<form method="post" class="form" name="testForm" id="testForm" enctype="multipart/form-data" action="/weixin/huirongyi/step3">
+					<input type="hidden" name="pdtid" id="pdtid" value="001">
+					<input type="hidden" name="merNo" id="merNo" value="000000000000001">
+					<input type="hidden" name="weixin" id="weixin" value="">
+					<input type="hidden" name="type" id="type" value="">
+					<input type="hidden" name="userName" id="userName" value="linxu345">
+					<input type="hidden" name="filesubtype" id="filesubtype" value="">
+					<input type="hidden" name="maritalstatus" id="maritalstatus" value="">
+					
+					<div class="mod" >
+						<table width="100%">			
+					<thead>		
+					  <tr>
+								  <td align="left" valign="top" ><span>您还没有登录金掌柜，登录金掌柜后系统会自动提取您已有的资料及证明，大大减少您的贷款资料录入量！</span></td>
+							  </tr>
+			</thead>					<tbody>	<tr>
+									<td align="left" valign="middle" class="gray">
+									
+											微信名：
+										
+										000000000000001
+									</td>
+								</tr>
+								
+								<tr>
+									<td height="26"  valign="middle">
+											金掌柜用户名：
+									
+										      <input size="12" type="text" name="name" id="name" placeholder="此项内容无数据，请填写">
+										<br/><span id="name_vali" class="valtip"></span>
+									</td>
+								</tr>
+								<tr>
+									<td height="26"  valign="middle">
+										金掌柜密码：
+									
+										  <input size="12" type="text" name="phone" id="phone"  placeholder="此项内容无数据，请填写" maxlength="11">
+										<br/><span id="phone_vali" class="valtip"></span>
+									</td>
+								</tr>
+								<tr>
+								  <td height="26"  valign="middle"><input name="btn2" value="登录" type="button"
+											onclick="show(2,'x','000000000000001')" class="formbutton_or"></td>
+							  </tr>
+								
+								<tr>
+									<td align="center">
+									  <input name="btn" value="我还不是金掌柜用户" type="button"
+											onclick="show(2,'x','000000000000001')" class="formbutton_gr">								    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				
+						
+						
+						
+					
+		  </form>
+			</section>
+			<footer>
+				<div align="center"></div>
+			</footer>
+	</body>
+</html>

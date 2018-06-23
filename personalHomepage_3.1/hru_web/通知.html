@@ -1,0 +1,116 @@
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>我要贷款</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="乐享微信">
+		<script type="text/javascript"
+			src="/weixin/Background/js/jquery-1.11.1.js">
+</script>
+		<link rel="stylesheet" href="weixin/Background/css/style.css"
+			type="text/css"></link>
+		<link rel="stylesheet" href="/weixin/Background/css/hry_menu.css"
+			type="text/css"></link>
+		<script type="text/javascript"
+			src="/weixin/Background/js/hry_menu.js">
+</script>
+
+		<script type="text/javascript">
+function sub(pro) {
+	document.getElementById("form1").action="/weixin/huirongyi/step2";
+	document.getElementById("form1").submit();
+}
+function sub2() {
+	document.getElementById("form1").action="/weixin/huirongyi/moreDetail";
+	document.getElementById("form1").submit();
+}
+function sub3() {
+	document.getElementById("form1").action="/weixin/applyTest/toAddTest";
+	document.getElementById("form1").submit();
+}
+</script>
+	</head>
+	<body>
+		
+		
+	
+		<table width="100%">
+			<tr class="menu">
+				<td align="left" >
+					<div align="center">
+						<a href="/weixin/huirongyi/step1?userName=linxu345&weixin=&type=">贷款申请</a>
+					</div>
+				</td>
+				<td align="left">
+					<div align="center">
+						<a class="site" href="/weixin/huirongyi/list?userName=linxu345&weixin=&type=">进度查询</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<section class="wrap">
+		<form method="post" action="/weixin/huirongyi/step2" class="form" name="form1" id="form1">
+			<input type="hidden" name="weixin" id="weixin" value="">
+			<input type="hidden" name="userName" id="userName" value="linxu345">
+			<input type="hidden" name="pdtid" id="pdtid" value="003">
+			<input type="hidden" name="type" id="type" value="1">
+			<div id="div1" class="mod " >
+					  <table width="100%"  class="bor_0 notice_container">
+								<tr>
+								  <td height="5" align="center" valign="middle">&nbsp;</td>
+							  </tr>
+								<tr>
+									<td width="90%" height="30" valign="middle" class="notice_box" >
+									
+										
+										
+											<div class="notice_logo_hr"></div>
+										
+										 
+										<div class="notice_title">
+										
+											
+												贷款申请成功提交通知书
+											
+											
+											
+										
+										</div>	
+									<p><div class="notice_content" ><b>金掌柜测试商户您好： </b></div></p>
+									<p class="content_text">
+										
+											
+											
+											
+												
+													
+														您通过金掌柜提交的55万元哈行流水贷款贷款申请已成功提交，我们会在７天内回复您。广东汇卡商务服务有限公司感谢您的信任与支持！
+													
+													
+												
+											
+										
+									</p>
+								</td>
+							  </tr>	
+							  <tr>
+									<td width="100%" height="30" valign="middle" >&nbsp;</td>
+							  </tr>
+						</table>
+					</div>
+		</form>
+		</section>
+		<footer>
+		<div align="center">
+			<!-- 页脚 -->
+		</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <meta name="format-detection"content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <title>掌柜卡设置</title>
+  <link rel="stylesheet" type="text/css" href="../css/bind.css">
+</head>
+<body>
+ <div class="global">
+		<div class="header">
+      <div class="header-title"><a href="#">< 掌柜卡设置</a></div>
+       </div>   
+    </div>
+	  <div class="wrapper">	
+		<!-- content begin -->
+		<div class="content">
+			<!-- segment begin -->
+			<div class="inf" id="segment">
+				绑定掌柜卡账号，账号更安全。
+			</div>
+            		<div class="inf_menber" >
+				用户名  linxu345
+			</div>
+			<!-- segment end -->
+			
+			<!-- error message begin -->
+			<div class="error-message" id="errorMessage" style="display:none;">
+				手机号或用户名已经注册过，请登录或换个号码试试?
+			</div>
+			<!-- error message end -->
+			
+			<!-- phone register begin -->
+			<div class="phone-register" id="phoneRegister">
+				<form>
+                    <input type="hidden" name="r" value="" id="pr-hiddenR" />
+                    <input type="hidden" name="entry" value="wapsso" id="pr-hiddenEntry" />
+				  <div class="input-w">
+					<input type="text" placeholder="手机号" id="pr-nameInput" />
+						<i class="input-icon icon-phone"></i>
+					</div>
+				  <div class="input-s">
+						<input type="text" placeholder="验证码" class="input-s-text" id="" /> <input name=""  class="input-s-btn" type="button"  value="发送验证码">
+				  </div>   
+                    
+					
+					<div class="btn-w">
+						<a href="javascript:;" class="large-btn gray" id="pr-submit">提交</a>
+					</div>
+				</form>
+			</div>
+			<!-- phone register end -->
+			
+			
+		</div>
+		<!-- content end -->
+	</div></div> 
+<script type="text/javascript" src="js/req.js"></script>
+	<script type="text/javascript" src="js/register-bind.js"></script>
+</body>
+</html>

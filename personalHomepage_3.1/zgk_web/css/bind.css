@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,div,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,iframe,input,textarea,select,label,article,aside,footer,header,menu,nav,section,time,audio,video {
+  margin:0;
+  padding:0;
+}
+article,aside,footer,header,hgroup,nav,section,audio,canvas,video,img {
+    display: block;
+}
+body {
+    font-size: 100%; 
+    font-family:Helvetica,STHeiti,Droid Sans Fallback;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+textarea {
+    resize: none;
+}
+iframe,img {
+    border:0;
+}
+ul,ol {
+    list-style:none;
+}
+input,
+select,
+textarea {
+    outline: 0;
+    -webkit-user-modify: read-write-plaintext-only;
+}
+input {
+    -webkit-appearance: none;border:0;
+}
+a{
+    text-decoration: none;
+}
+body,.global{  background: #fafafa;}
+.global{ min-width: 320px;
+}
+.clearfix:after{clear:both;content:".";display:block;height:0;visibility:hidden;}
+.input-w input{width:220px; padding:0; border:none; outline:none; -webkit-appearance:none; background-color:transparent; font-size:14px; color:#959595;}
+.input-c input{width:140px; padding:0; border:none; outline:none; -webkit-appearance:none; background-color:transparent; font-size:14px; color:#959595;}
+.error input{color:#db0000;}
+.input-w{height:50px; line-height:50px; background:url(../images/icons.png) no-repeat 0px -125px; margin-top:10px; padding:0px 15px; position:relative;}
+.input-c{height:50px; line-height:50px; background:url(../images/icons.png) no-repeat 0px -70px; margin-top:10px; padding:0px 15px; position:relative;}
+.input-s{height:50px; line-height:50px;  margin-top:10px; }
+.input-s-text{float:left;width:140px;height:50px; line-height:50px; background:url(../images/icons.png) no-repeat 0px -70px;padding:0 15px;color:#959595;font-size:14px; }
+.input-s-btn{float:left;width:110px;height:50px; line-height:50px; background:url(../images/icons.png) no-repeat -172px -70px;color:#fff;font-size:14px; display:block;}
+.input-icon{float:right; background:url(../images/icons.png) no-repeat;}
+.icon-phone{width:11px; height:19px; margin-top:15px; background-position:0px 0px;}
+.icon-psd{width:14px; height:16px; margin-top:17px; background-position:-34px 0px;}
+.icon-code{float:right;width:70px; height:50px;display:block; background:url(../images/refresh.png) 5px 20px no-repeat;padding-left:20px;}
+
+.input-w.error{background-position:0px -180px;}
+.error .icon-phone{background-position:-20px 0px;}
+.error .icon-psd{background-position:-49px 0px;}
+.error .icon-email{background-position:-95px 0px;}
+
+.btn-w{margin-top:25px;}
+.large-btn{line-height:39px; display:block; height:39px; text-align:center; color:#fff; font-size:15px; background:url(../images/icons.png) no-repeat; text-decoration:none;}
+.large-btn.blue{background-position:0px -235px;}
+.large-btn.gray{background-position:0px -280px;}
+
+.wrapper{width:280px; margin:0 auto;}
+.header{ width: 100%; height: 44px;  background:#f9f9f9; border-bottom: 2px solid #b4b4b4; }
+.header-title{width:280px;margin:0 auto;padding-left:10px;line-height: 44px;  font-size: 1em;}
+.header-title a { color:#4e5255; font-weight:bold;}
+.content{margin-top:10px; padding-bottom:50px;}
+.inf{ color:#9c9c9c;line-height:200%;font-size:0.9em; }
+.inf_menber{line-height:200%;color:#595959; font-weight:bold;}
+.segment{height:40px; background:url(../images/icons.png) no-repeat 0px -75px; padding:3px 3px 1px 3px;}
+.segment a{line-height:40px; display:inline-block; height:40px; width:133px; text-align:center; text-decoration:none; font-size:15px; color:#fff;}
+.segment-c1 .segment-item1, .segment-c2 .segment-item2{background:url(../images/icons.png) no-repeat 0px -30px; color:#000;}
+
+.error-message{font-size:12px; color:#db0000; margin-top:20px;}
+
+.phone-register{padding-top:0;}
+
+.toggle-password{background-image:url(../images/icons.png); background-repeat:no-repeat; position:absolute; display:block; text-indent:-9999em; width:38px; height:38px; top:6px; right:6px;}
+.toggle-password.show{background-position:-140px 0px;}
+.toggle-password.hide{background-position:-185px 0px;}
+
+
+
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+    .header {background:url(../images/service_logo2x.png) no-repeat; background-size:198px 178px;}
+    .segment, .segment-c1 .segment-item1, .segment-c2 .segment-item2, .input-w, .input-icon, .read-rule span, .large-btn, .toggle-password{background-image:url(../images/icons2x.png); background-size:280px 364px;}
+}

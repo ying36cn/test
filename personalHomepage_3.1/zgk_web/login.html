@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=gb2312" />
+<title>登录</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<script src="js/register.js"></script>
+
+</head>
+<body>
+	<div class="wrapper">
+		<h1 class="header">掌柜服务中心</h1>
+		
+		<!-- content begin -->
+		<div class="content">
+			<!-- segment begin -->
+			<div id="segment">
+				
+			</div>
+			<!-- segment end -->
+			
+			<!-- error message begin -->
+			<div class="error-message" id="errorMessage" style="display:none;">
+				手机号或用户名已经注册过，请登录或换个号码试试?
+			</div>
+			<!-- error message end -->
+			
+			<!-- phone register begin -->
+			<div class="phone-register" id="phoneRegister">
+				<form>
+                    <input type="hidden" name="r" value="" id="pr-hiddenR" />
+                    <input type="hidden" name="entry" value="wapsso" id="pr-hiddenEntry" />
+					<div class="input-w">
+						<input type="text" placeholder="手机号" id="pr-nameInput" />
+						<i class="input-icon icon-phone"></i>
+					</div>
+					
+                    
+                    <div class="input-w">
+						<input type="password" placeholder="密码" id="pr-passwordInput" />
+						<i class="input-icon icon-psd"></i>
+						<a href="javascript:;" class="toggle-password hide" style="display:none;line-height:50px;" id="pr-togglePassword">Toggle</a>
+					</div>
+                  <div class="input-c">
+						<input type="text" placeholder="验证码" id="" /><i href="#" id=""class="icon-code "><img src="images/code.png" width="64" height="50" ></i>
+					</div>   
+                    
+					
+					<div class="btn-w">
+						<a href="home.html"  target="_self" class="large-btn blue" id="pr-submit" >登录</a>
+					</div>
+				</form>
+			</div>
+			<!-- phone register end -->
+			
+			
+		</div>
+		<!-- content end -->
+	</div>
+<script type="text/javascript" src="js/req.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
+</body>
+</html>
