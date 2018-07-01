@@ -1,0 +1,51 @@
+<script src="units/smartjw12e_list/echarts.min.js"></script>
+<div  style="width: 860px;height: 240px;">
+	 <line e-chart  id="chartsBox" e-data="eData" legend="legend" item="item" selected-box="selectedBox" name-box="nameBox"></line>
+</div>
+
+<!--	<canvas id="myCanvas"></canvas>-->
+
+
+<!-- <div style="overflow: auto; width: 300px; float:left;">
+	<p ng-repeat="data in mainData">{{data}}</p>
+</div>
+<div style="overflow: auto; width: 300px; float:left;">
+	<p ng-repeat="data in mainFieldMeta">{{data}}</p>
+</div>
+ -->
+<!-- <div class="ch-container global">
+	<div class="btn-toolbar borderbottom0">
+		<div class="btn-group" id="{{unitId}}">
+			<i ng-repeat="button in buttons" class="{{button.tb}} ipadding" title="{{button.tip}}"
+				ng-mouseup="clickEvent(button.event,button.tb);" ng-mousedown="changeButtonColor(button.tip);"></i>
+		</div>
+		<div class="btn-group">
+			<i class="glyphicon glyphicon-th-list blue dropdown-toggle"
+				data-toggle="dropdown" title="更多"></i>
+			<ul class="dropdown-menu">
+				<li ng-click="moreSearch()">
+				<a><i class="glyphicon glyphicon-filter blue"></i>高级查询</a></li>
+                 <li ng-repeat="button in extbuttons" ng-click="clickEvent(button.event);"><a ng-class="{fontgray:button.font}">
+					<i class="{{button.tb}}"></i>{{button.tip}}</a></li>
+             </ul>
+		</div>
+		<form class="form-inline pull-right">
+			<div class="row">
+		         <div class="col-lg-9">
+		            <div class="form-group has-success has-feedback searchBox">
+		                <input type="text" class="form-control height21" id="{{unitName}}condition" value="{{condition}}"
+		                	placeholder="{{keywords}}" ng-keydown="keydown($event);"/>
+		                <span class="glyphicon glyphicon-search form-control-feedback paddingright15" ng-click="query();" title="查询"></span>
+		            </div>
+		        </div>
+			</div>
+        </form>
+	</div>
+	<div class="row ohidden">
+		<div class="col-lg-12" ng-style="styleEntity" id="gridDiv_{{unitId}}"  ng-grid="gridOptions"></div>
+     </div>
+    <div class="page-box">
+   		<tm-pagination conf="paginationConf"></tm-pagination>
+   	</div>
+</div>
+-->
