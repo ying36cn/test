@@ -54,6 +54,7 @@ function optionObject(){
 		$scope.pKey;
 
 		$scope.unitId = "${unitId}";
+		//此处省略二千多行代码...
 	
 		$scope.callMethod = function(evt,param,current,line){
 			switch (param.methodName) {
