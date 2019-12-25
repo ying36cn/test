@@ -1,0 +1,11 @@
+<!--search.wxml-->
+<view class="search-header">
+  <input class="search-input" bindinput="handleInputChange"/>
+  <view class="search-btn" bindtap="handleSearch"> 搜索</view>
+</view>
+<view>
+  <view wx:for="{{list}}" wx:key="{{item.id}}" class="item" id="{{item.id}}" bindtap="handleItemTap"> 
+  ({{itme.type === "sell" ? "转让" : "求购"}})
+  {{item.address}} 
+  </view>
+</view>
